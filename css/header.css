@@ -1,0 +1,126 @@
+.header {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: 70px 12vh repeat(3, max-content);
+    grid-gap: 20px;
+    text-align: center;
+    background-image: linear-gradient(to left, #4d4c4c4f, #000000), url(../pic/1.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+
+/* -----Main-header----- */
+.main-header {
+    width: 100vw;
+    height: 70px;
+    background-color: #F1F1F1;
+    opacity: .7;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.main-header .left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .left h2 span {
+    color: #FDB827;
+}
+
+.main-header .left .hamburger-menu {
+    min-width: 30px;
+    height: 25px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 15px 0 30px;
+}
+
+.main-header .left .hamburger-menu .line {
+    background-color: #23120B;
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.main-header .right {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.main-header .right a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .1s;
+}
+.main-header .right li:hover a {
+    color: #FDB827;
+    border-bottom: 2px solid #23120B;
+}
+
+@media (max-width:600px) {
+    .main-header .right {
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .main-header .left {
+        width: 100%;
+    }
+}
+/* -----End of Main-header----- */
+
+
+.header-txt {
+    grid-row: 3/4;
+    color: #F1F1F1;
+}
+
+.shop-name {
+    grid-row: 4/5;
+    color: #F1F1F1;
+}
+
+.shop-name span {
+    font-size: 33px;
+}
+
+@media screen and (max-width:450px) {
+    .header-txt,
+    .shop-name{
+        font-size: 27px;
+    }
+    .shop-name span {
+        font-size: 30px;
+    }
+}
+
+.header-btn {
+    grid-row: 5/6;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border-width: 0;
+    color: #F1F1F1;
+    background-color: #FDB827;
+    font-size: 18px;
+    box-shadow: #23120B 1px 1px 20px;
+    cursor: pointer;
+    transition: all .8s;
+    justify-self: center;
+}
+.header-btn:hover {
+    color: #FDB827;
+    background-color: #F1F1F1;
+    box-shadow: inset #23120B 1px 1px 20px;
+}

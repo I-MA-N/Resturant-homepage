@@ -1,0 +1,47 @@
+.services {
+    grid-column: 2/ 6;
+}
+
+.services-layout {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
+    grid-template-rows: repeat(2, 300px);
+}
+
+.service-image {
+    width: 100%;
+    height: 220px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.caption {
+    padding-bottom: 8px;
+}
+
+.caption,
+.description {
+    text-align: center;
+}
+
+.service-box .delay-style{
+    color: green;
+    font-size: 18px;
+}
+
+.service-box .delicious-style {
+    font-size: 18px;
+}
+
+.service-box .hot-style {
+    color: red;
+    font-size: 18px;
+}
+
+.service-box .health-style {
+    color: green;
+    font-size: 18px;
+}

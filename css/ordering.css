@@ -1,0 +1,87 @@
+.ordering {
+    grid-column: 1 / -1;
+    /* margin: 20px 0 50px 0; */
+}
+
+.order-section {
+    width: 100%;
+    padding: 30px;
+    background-image: linear-gradient(to right, #4d4c4c4f, #000000), url(../pic/ordering.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr) 50px;
+    grid-template-rows: 1fr;
+}
+
+.order-section .left {
+    background-color: #000000;
+    opacity: .8;
+    padding: 10px;
+    color: #F1F1F1;
+    text-align: center;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 2fr 1fr repeat(3, .5fr) 2fr;
+}
+
+.order-section .right {
+    background-color: #F1F1F1;
+    text-align: center;
+    opacity: .8;
+    padding: 10px;
+    grid-column: 3/6;
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr 1fr 2fr;
+}
+
+.right-images {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-image-box {
+    width: 140px;
+    height: 100px;
+    clip-path: circle(40% at 50% 50%);
+}
+
+.right-title,
+.branches,
+.parentheses {
+    color: #FDB827;
+    font-family: 'Sevillana', cursive;
+}
+
+.slogan {
+    align-self: center;
+    font-family: 'Sevillana', cursive;
+    font-size: 20px;
+    border: 1px #FDB827 dashed;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:750px) {
+    .order-section {
+        padding: 10px;
+    }
+    .right-image-box {
+        width: 80px;
+    }
+    .slogan {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .order-section {
+        grid-template-columns: 10px repeat(4, 1fr) 10px;
+    }
+    .right-image-box {
+        height: 80px;
+    }
+}

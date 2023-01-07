@@ -1,0 +1,57 @@
+.footer {
+    grid-column: 1 / -1;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul .footer-title {
+    cursor: auto;
+    color: #FDB827;
+}
+
+.footer-section ul li {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    color: #FDB827;
+    transition: all .3s;
+}
+
+.footer-section ul .telegram-style:hover {
+    color: #0088cc;
+}
+
+.footer-section ul .whatsapp-style:hover {
+    color: #25D366;
+}
+
+.footer-section ul .youtube-style:hover {
+    color: #FF0000;
+}
+
+.copy-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:570px) {
+    .footer-section {
+        text-align: start;
+    }
+}

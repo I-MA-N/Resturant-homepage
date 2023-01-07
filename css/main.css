@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Sevillana&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: 80vh repeat(5 ,max-content);
+}
+
+.brand-name {
+    color: #FDB827;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0 10px 0;
+    color: #FDB827;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    background-color: #23120B;
+    display: inline-block;
+    width: 7%;
+    height: 2px;
+    vertical-align: middle;
+}
